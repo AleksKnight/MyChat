@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <com.makeramen.roundedimageview.RoundedImageView
+          android:layout_width="57dp"
+          android:layout_height="57dp"
+          android:id="@+id/userAvatar"
+          xmlns:app="http://schemas.android.com/apk/res-auto"
+          android:scaleType="fitCenter"
+          android:src="@drawable/def_user_avatar"
+          app:riv_border_color="#333333"
+          app:riv_border_width="1dp"
+          app:riv_corner_radius="5dp"
+          app:riv_mutate_background="true"
+
+          android:visibility="visible"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="20dp"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/userName"
+          android:layout_marginTop="20dp"
+          android:layout_gravity="center_vertical"
+          android:layout_toRightOf="@+id/userAvatar"
+
+          android:layout_alignParentTop="true"
+          android:gravity="center_vertical"
+          android:layout_alignBottom="@+id/userAvatar"
+          android:textSize="20dp"
+          android:visibility="visible"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="3dp"
+        >
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/inn_sms"
+          android:id="@+id/textMessage"
+          android:layout_marginRight="@dimen/margin_text_right_msg"
+          android:layout_marginLeft="@dimen/margin_text_left_msg"
+          android:minHeight="80dp"
+          android:textSize="20dp"
+          android:padding="@dimen/msg_text_padding"
+          android:layout_marginTop="@dimen/margin_text_top"
+          />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/dataTime"
+          android:layout_alignParentTop="true"
+          android:layout_alignRight="@+id/textMessage"/>
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/text_msg_img_size_height"
+          android:id="@+id/imageInMessage"
+          android:layout_marginTop="@dimen/margin_image_text_top"
+          android:layout_marginLeft="@dimen/margin_image_text_msg"
+          android:layout_marginRight="@dimen/margin_image_text_msg"
+          android:scaleType="fitStart"/>
+    </RelativeLayout>
+  </LinearLayout>
+
+</RelativeLayout>

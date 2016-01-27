@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <item name="sessionLoader" type="id" />
+  <item name="updateSession" type="id" />
+  <item name="messagesLoader" type="id"/>
+  <item name="sendMessage" type="id"/>
+  <item name="fileLoader" type="id"/>
+</resources>

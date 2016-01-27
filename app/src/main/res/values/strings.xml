@@ -1,0 +1,10 @@
+<resources>
+  <string name="app_name">MyChat</string>
+  <string name="toolbar_name">Chat</string>
+  <string name="action_plus">plus</string>
+  <string name="signup_user">Great a New User</string>
+  <string name="message_emty">Message is empty</string>
+  <string name="add_image">Add Image</string>
+  <string name="file_upload">File is uploading</string>
+  <string name="file_not_valid">File is to very big</string>
+</resources>
